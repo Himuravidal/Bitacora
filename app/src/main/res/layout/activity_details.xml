@@ -8,6 +8,7 @@
     android:paddingLeft="64dp"
     android:paddingRight="64dp"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryDark"
     tools:context="cl.adachersoft.bitacora.views.details.DetailsActivity">
 
 
@@ -15,6 +16,7 @@
         android:id="@+id/detailsET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
         android:background="@drawable/bg_white_bordered_primary_light"
         android:hint="Ingresa los detalles de tu progreso"
         android:lines="5"
