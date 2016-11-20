@@ -8,9 +8,7 @@
     </item>
 
 
-    <item
-        android:bottom="1dp"
-       >
+    <item android:bottom="1dp">
 
 
         <color android:color="@android:color/white"></color>

@@ -10,7 +10,7 @@ import static android.R.attr.description;
 
 public class Record extends SugarRecord {
 
-    private String name,description;
+    private String name, description;
     private boolean done;
 
     public Record() {

@@ -6,11 +6,11 @@
 
     </item>
 
-<item>
+    <item>
 
-    <color android:color="@color/colorAccent"></color>
+        <color android:color="@color/colorAccent"></color>
 
-</item>
+    </item>
 
 
 </selector>

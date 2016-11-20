@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements FirstCallback, Se
     @Override
     public void fail() {
 
-        Toast.makeText(this, "Ingrese un Registro", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Ingrese un Registro en la Bitacora", Toast.LENGTH_SHORT).show();
 
     }
 

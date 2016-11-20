@@ -24,8 +24,6 @@ import cl.adachersoft.bitacora.views.main.recordList.ListClickListener;
 public class RecordsAdapter extends RecyclerView.Adapter<RecordsAdapter.ViewHolder> {
 
 
-
-
     private List<Record> records = new RecordsData().notDone();
     private ListClickListener listener;
 
@@ -46,7 +44,6 @@ public class RecordsAdapter extends RecyclerView.Adapter<RecordsAdapter.ViewHold
 
         final Record record = records.get(position);
         holder.name.setText(record.getName());
-
 
 
         CheckBox checkBox = holder.status;
@@ -71,7 +68,7 @@ public class RecordsAdapter extends RecyclerView.Adapter<RecordsAdapter.ViewHold
             }
         });
 
-        holder.name.setOnClickListener(new View.OnClickListener(){
+        holder.name.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -80,9 +77,6 @@ public class RecordsAdapter extends RecyclerView.Adapter<RecordsAdapter.ViewHold
 
             }
         });
-
-
-
 
 
     }
@@ -99,9 +93,9 @@ public class RecordsAdapter extends RecyclerView.Adapter<RecordsAdapter.ViewHold
 
     }
 
-    public void search (String name){
+    public void search(String name) {
 
-        List<Record>recordList = new RecordsData().byName(name);
+        List<Record> recordList = new RecordsData().byName(name);
         records.clear();
         records.addAll(recordList);
         notifyDataSetChanged();
@@ -109,7 +103,7 @@ public class RecordsAdapter extends RecyclerView.Adapter<RecordsAdapter.ViewHold
     }
 
 
-    public void reset(){
+    public void reset() {
 
         records.clear();
         List<Record> recordList = new RecordsData().notDone();
@@ -117,7 +111,6 @@ public class RecordsAdapter extends RecyclerView.Adapter<RecordsAdapter.ViewHold
         notifyDataSetChanged();
 
     }
-
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

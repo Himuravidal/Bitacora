@@ -49,19 +49,19 @@ public class RecordListFragment extends Fragment implements ListClickListener {
 
         recyclerView.setAdapter(recordsAdapter);
 
-        final SwipeRefreshLayout refreshLayout = (SwipeRefreshLayout)view;
-      refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-          @Override
-          public void onRefresh() {
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                recordsAdapter.reset();
-                    refreshLayout.setRefreshing(false);
-                }
-            },800);
-          }
-      });
+        final SwipeRefreshLayout refreshLayout = (SwipeRefreshLayout) view;
+        refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        recordsAdapter.reset();
+                        refreshLayout.setRefreshing(false);
+                    }
+                }, 800);
+            }
+        });
 
     }
 
