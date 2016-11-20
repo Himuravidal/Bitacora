@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cl.adachersoft.bitacora.views.details.DetailsActivity">
+
+
+    <EditText
+        android:id="@+id/detailsET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_bordered_primary_light"
+        android:hint="Ingresa los detalles de tu progreso"
+        android:lines="5"
+        android:padding="8dp"
+
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="cl.adachersoft.bitacora.views.main.searchBar.SearchFragment">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autocompleteTV"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableRight="@mipmap/ic_search_white_24dp"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/searchIv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_search_white_24dp"
+
+
+        />
+
+</LinearLayout>
